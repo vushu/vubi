@@ -20,11 +20,10 @@ class InitializedSDLFixture : public ::testing::Test {
     bool sdl_initialized_;
 };
 
-TEST_F(InitializedSDLFixture, initialize_image) {
-    GTEST_SKIP();
-    bool success = vubi::sdl_utilities::initialize_image();
-    if (success) {
-        IMG_Quit();
-    }
-    ASSERT_TRUE(success);
-}
+// TEST_F(InitializedSDLFixture, initialize_image) {
+//     bool success = vubi::sdl_utilities::initialize_image();
+//     if (success) {
+//         IMG_Quit();
+//     }
+//     ASSERT_TRUE(success);
+// }
