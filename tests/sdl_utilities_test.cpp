@@ -21,6 +21,7 @@ class InitializedSDLFixture : public ::testing::Test {
 };
 
 TEST_F(InitializedSDLFixture, initialize_image) {
+    GTEST_SKIP();
     bool success = vubi::sdl_utilities::initialize_image();
     if (success) {
         IMG_Quit();
